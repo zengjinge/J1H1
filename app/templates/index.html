@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片切换</title>
+</head>
+<style>
+    .box {
+        width: 500px;
+        margin: 200px auto;
+      
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .imgs {
+        margin: auto;
+        width: 200px;
+        height: 200px;
+      
+    }
+
+    .imgs .img {
+
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .btns {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btns button {
+        margin: 3px;
+    }
+</style>
+
+<body>
+
+    <div class="box">
+
+
+        <div class="imgs">
+            <img class="img" src="./img/feng1.png" />
+
+
+
+        </div>
+
+
+        <div class="btns">
+
+
+
+            <button onclick="changetoimg1()">MALE</button>
+            <button onclick="changetoimg2()">FEMALE</button>
+            <button onclick="changetoimg3()">Handcap-MALE</button>
+            <button onclick="changetoimg4()">Handcap-FEMALE</button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let img = document.querySelector('.imgs .img')
+
+        function changetoimg1() {
+            img.src = './img/img1.png'
+
+
+        }
+
+        function changetoimg2() {
+            img.src = './img/img2.png'
+        }
+        function changetoimg3() {
+            img.src = './img/img3.png'
+        }
+        function changetoimg4() {
+            img.src = './img/img4.png'
+        }
+    </script>
+</body>
+
+</html>
